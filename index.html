@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- Header Section -->
-    <div class="header">
+    <div class="header-section">
       <!-- Top Navbar -->
       <div class="header-container">
         <div class="social-icons-container">
@@ -71,22 +71,29 @@
           ></a>
         </div>
         <div class="header-right">
-          <div class="sign-in">
-            <span class="material-icons md-light md-inactive md-18">
+          <div class="sign-in-container">
+            <span
+              class="material-icons md-light md-inactive md-18 account-circle-icon"
+            >
               account_circle
             </span>
-            <span class="header-text sign-in">SIGN</span
-            ><span class="header-text">IN</span>
+            <a
+              href="#"
+              class="just-flex"
+              ><span class="header-text sign-in">SIGN</span
+              ><span class="header-text">IN</span></a
+            >
           </div>
           <div class="bar1"></div>
           <div class="language">
-            <span class="material-icons md-light md-inactive md-18 language-icon">
+            <span
+              class="material-icons md-light md-inactive md-18 language-icon"
+            >
               language
             </span>
-            <span class="header-text">ENG</span>
-            <span class="material-icons md-light md-inactive md-18">
-              keyboard_arrow_down
-            </span>
+            <select class="language-drop-down">
+              <option value="eng">ENG</option>
+            </select>
           </div>
         </div>
       </div>
@@ -95,91 +102,83 @@
     <div class="home-section">
       <div class="home-container">
         <!-- Main Navbar -->
-        <div class="navbar">
-          <div class="logo">
-            <p class="logo-text">PASCO</p>
+        <div class="nav-menu">
+          <div class="logo-container">
+            <a
+              href="#"
+              class="logo-text"
+              >PASCO</a
+            >
           </div>
           <ul class="navs">
             <li class="nav">
-              <div class="nav-filler"></div>
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">HOME</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
-              <div class="nav-active"></div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
+              <!-- <div class="nav-active"></div> -->
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">PORTFOLIO</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">BLOG</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">PAGES</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">SHOP</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">COMPONENTS</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
             <li class="nav">
-              <div class="nav-item">
+              <a class="nav-item">
                 <p class="nav-text">FEATURES</p>
-                <img
-                  src="./images/icons/keyboard_arrow_down_white.png"
-                  alt="down"
-                />
-              </div>
+                <span class="material-icons md-light md-18">
+                  keyboard_arrow_down
+                </span>
+              </a>
             </li>
           </ul>
           <div class="nav-tools">
-            <span class="material-symbols-outlined"> search </span>
+            <a href=""><span class="material-icons md-light nav-right-icon"> search </span></a>
             <div class="bar2"></div>
-            <img
-              src="./images/icons/heart_icon.png"
-              alt="heart"
-              style="margin-left: 1px"
-            />
+            <a href=""
+              ><span class="material-icons md-light nav-right-icon"> favorite_border </span></a
+            >
             <div class="bar2"></div>
-            <img
-              src="./images/icons/shopping_cart.png"
-              alt="cart"
-              style="margin-left: 2px"
-            />
+            <a href=""
+              ><span class="material-icons md-light nav-right-icon"> shopping_cart </span></a
+            >
           </div>
         </div>
         <!-- Home Section Body -->
