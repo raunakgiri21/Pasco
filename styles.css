@@ -207,24 +207,16 @@ Home Section
 }
 .navs {
   display: flex;
-  height: inherit;
   margin-left: 111px;
 }
-.nav {
-  position: relative;
+.nav-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0;
   margin-right: 10px;
 }
 .active-nav {
-  position: absolute;
-  background-color: #ff4081;
-  width: 80px;
-  height: 4px;
-  top: 65px;
-  left: 1px
+  margin-top: 4px;
+  padding: 22px 0;
+  border-bottom: 4px solid #ff4081;
 }
 .nav-item {
   height: inherit;
@@ -249,12 +241,22 @@ Home Section
 .nav-right-icon {
   margin-top: 3px;
 }
-.bar2 {
-  background-color: #6a6461;
-  height: 30px;
-  width: 1px;
-  margin: 0 10px;
-  /*  3 buttons */
+
+.top-right-search {
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  border-right: 1px solid #6a6461;
+}
+.top-right-favorite {
+  margin-left: 11px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  border-right: 1px solid #6a6461;
+}
+.top-right-cart {
+  margin-left: 15px;
 }
 
 /************** Home Body **************/
