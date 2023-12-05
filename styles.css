@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
 }
 .just-flex {
   display: flex;
+  align-items: center;
 }
 
 /* 
@@ -33,6 +34,9 @@ Material Icons
 */
 
 /* Rules for sizing the icon. */
+.material-icons.md-9 {
+  font-size: 9px;
+}
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -56,10 +60,13 @@ Material Icons
 
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3);
+.material-icons.md-grey {
+  color: #858585;
+}
+.material-icons.md-light-grey {
+  color: #707070;
 }
 
 /* 
@@ -123,43 +130,40 @@ Header
 .header-right {
   display: flex;
   margin: auto 0;
-  gap: 12px;
-}
-.sign-in-container {
-  display: flex;
-  align-items: center;
-  margin-right: 2px;
-}
-.sign-in {
-  display: flex;
-  align-items: center;
-  margin-left: 4px;
-  margin-right: 5px;
+  gap: 0px;
 }
 .header-text {
   font-size: 12px;
   font-weight: 400;
-  color: #707070;
+  color: #858585;
+  margin-left: 5px;
   margin-bottom: 1px;
-}
-.bar1 {
-  width: 1px;
-  height: 20px;
-  background-color: #707070;
+  word-spacing: 2px;
 }
 .language {
   display: flex;
   align-items: center;
 }
-.language-drop-down {
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin-right: 0;
-  font-size: 12px;
-  color: #707070;
-  outline: none;
-  cursor: pointer;
+.language-key-down {
+  transform: scale(2);
+  margin-bottom: 2px;
+  margin-right: 1px;
+  margin-left: 5px;
+}
+.language-icon {
+  margin-bottom: 2px;
+  margin-left: 13px;
+  margin-right: 1px;
+}
+.sign-in-container {
+  display: flex;
+  align-items: center;
+  padding-right: 14px;
+  height: 20px;
+  border-right: 1px solid #707070;
+}
+.account-circle-icon {
+  margin-bottom: 1px;
 }
 
 /* 
@@ -204,18 +208,29 @@ Home Section
 .navs {
   display: flex;
   height: inherit;
-  gap: 14px;
-  margin-left: 125px;
+  margin-left: 111px;
 }
 .nav {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-right: 11px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.active-nav {
+  position: absolute;
+  background-color: #ff4081;
+  width: 80px;
+  height: 4px;
+  top: 65px;
+  left: 1px
 }
 .nav-item {
   height: inherit;
   display: flex;
   align-items: center;
+  padding-left: 14px;
   gap: 6px;
 }
 .nav-text {
@@ -223,17 +238,10 @@ Home Section
   font-size: 14px;
   font-weight: 700;
 }
-/* .nav-ative {
-  position: relative;
-  top: 23px;
-  background-color: #ff4081;
-  height: 4px;
-  width: 80px;
-} */
 .nav-tools {
   display: flex;
   align-items: center;
-  margin-left: 43px;
+  margin-left: 50px;
 }
 .nav-icon {
   color: #ffffff;
@@ -261,6 +269,7 @@ Home Section
 .inspiration-text {
   font-size: 18px;
   margin-top: 215px;
+  margin-left: 3px;
   letter-spacing: 2px;
   color: #bdbdbe;
 }
