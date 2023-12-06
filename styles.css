@@ -34,31 +34,17 @@ Material Icons
 */
 
 /* Rules for sizing the icon. */
-.material-icons.md-9 {
-  font-size: 9px;
+.material-icons.md-18-anti-rpad {
+  width: 14px;
+  font-size: 18px;
+}
+.material-icons.md-16 {
+  font-size: 16px;
 }
 .material-icons.md-18 {
   font-size: 18px;
 }
-.material-icons.md-24 {
-  font-size: 24px;
-}
-.material-icons.md-36 {
-  font-size: 36px;
-}
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54);
-}
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-/* Rules for using icons as white on a dark background. */
+/* Rules for coloring the icon. */
 .material-icons.md-light {
   color: #ffffff;
 }
@@ -68,6 +54,9 @@ Material Icons
 .material-icons.md-light-grey {
   color: #707070;
 }
+.material-icons.md-grey-2 {
+  color: #bfbfbf;
+}
 
 /* 
 ====================================
@@ -75,25 +64,28 @@ Elements
 ====================================
 */
 
-.btn {
-  /* width: 170px;
-  height: 45px; */
+.blue-btn {
+  height: 45px;
   margin: 0;
-  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 27px;
+  padding-right: 28px;
   border-radius: 25px;
   border: none;
   background-color: #303f9f;
   color: #ffffff;
   font-size: 15px;
   letter-spacing: 2.5px;
+  word-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.btn:hover {
+.blue-btn:hover {
   opacity: 0.8;
 }
-.btn:active {
+.blue-btn:active {
   opacity: 0.5;
 }
 
@@ -116,10 +108,12 @@ Header
   width: 1170px;
   /* max-width: 1170px; */
   margin: 0 auto;
+  margin-top: 1px;
 }
 .social-icons-container {
   height: fit-content;
   margin: auto 0;
+  margin-top: 1px;
 }
 .header-social-icon {
   color: #707070;
@@ -145,10 +139,8 @@ Header
   align-items: center;
 }
 .language-key-down {
-  transform: scale(2);
   margin-bottom: 2px;
   margin-right: 1px;
-  margin-left: 5px;
 }
 .language-icon {
   margin-bottom: 2px;
@@ -191,6 +183,7 @@ Home Section
 /************** Navbar **************/
 
 .nav-menu {
+  padding-top: 1px;
   height: 68px;
   display: flex;
   align-items: center;
@@ -211,7 +204,7 @@ Home Section
 }
 .nav-container {
   display: flex;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 .active-nav {
   margin-top: 4px;
@@ -270,43 +263,66 @@ Home Section
 }
 .inspiration-text {
   font-size: 18px;
-  margin-top: 215px;
+  margin-top: 216px;
   margin-left: 3px;
   letter-spacing: 2px;
   color: #bdbdbe;
 }
-.big-title-container {
-  display: flex;
-  justify-content: center;
-  max-width: 806px;
-  /* percentage */
-  margin-bottom: 26px;
-}
 .big-title-text {
-  margin-top: 14px;
+  margin: auto 138px;
+  margin-top: 15px;
+  margin-bottom: 30px;
   font-size: 42px;
   color: #ffffff;
   font-weight: 900;
   letter-spacing: 2px;
-  word-spacing: -4px;
-  line-height: 1.25;
-}
-.author-container {
-  width: 235px;
+  line-height: 1.2;
 }
 .author-photo {
   width: "50px";
   height: "50px";
-  margin-top: 81px;
-  margin-bottom: 11px;
+  margin-top: 80px;
+  margin-right: 2px;
+  margin-bottom: 12px;
+}
+.author-name {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.author-date-time {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #9b9b9c;
+  margin-left: 3px;
+  gap: 7px;
+}
+.author-date-time > span {
+  letter-spacing: 1px;
+}
+.comments-icon {
+  margin-right: 7px;
+}
+.likes-icon {
+  margin-right: 4px;
 }
 .author-feedback {
-  margin-top: 35px;
+  margin-top: 34px;
+  margin-right: 6px;
   display: flex;
   align-items: center;
-  color: #bdbdbd;
   font-size: 11px;
   gap: 30px;
+}
+.author-feedback  span {
+  letter-spacing: 1px;
+}
+.author-feedback a{
+  color: #bdbdbd;
 }
 
 /* 
