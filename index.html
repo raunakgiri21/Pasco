@@ -114,7 +114,7 @@
             >
           </div>
           <ul class="navs">
-            <li class="nav-container">
+            <li class="nav-container active-nav">
               <a class="nav-item">
                 <span class="nav-text">HOME</span>
                 <span class="material-icons md-light md-18-anti-rpad">
@@ -122,7 +122,7 @@
                 </span>
               </a>
             </li>
-            <li class="nav-container active-nav">
+            <li class="nav-container">
               <a class="nav-item">
                 <span class="nav-text">PORTFOLIO</span>
                 <span class="material-icons md-light md-18-anti-rpad">
@@ -245,94 +245,258 @@
         <p class="sort-blog-text">SORT BLOG:</p>
         <ul class="blog-list-container">
           <li>
-            <div class="blog-list blog-list-active">
-              <p class="blog-list-text">All</p>
-            </div>
+            <a class="blog-list blog-list-active">
+              <span class="blog-list-text">All</span>
+            </a>
           </li>
           <li>
-            <div class="blog-list">
-              <p class="blog-list-text">Photography</p>
-            </div>
+            <a class="blog-list">
+              <span class="blog-list-text">Photography</span>
+            </a>
           </li>
           <li>
-            <div class="blog-list">
-              <p class="blog-list-text">lifestyle</p>
-            </div>
+            <a class="blog-list">
+              <span class="blog-list-text">lifestyle</span>
+            </a>
           </li>
           <li>
-            <div class="blog-list">
-              <p class="blog-list-text">trip</p>
-            </div>
+            <a class="blog-list">
+              <span class="blog-list-text">trip</span>
+            </a>
           </li>
           <li>
-            <div class="blog-list">
-              <p class="blog-list-text">inspiration</p>
-            </div>
+            <a class="blog-list">
+              <span class="blog-list-text">inspiration</span>
+            </a>
           </li>
         </ul>
       </div>
     </div>
     <!-- BODY -->
-    <div class="body">
+    <div class="body-main">
       <div class="body-container">
-        <div class="body-content">820px</div>
-        <div class="body-side-panel">
-          <div class="input-search-1-container">
-            <input
-              type="text"
-              name="search"
-              id="search"
-              class="input-search-1"
-              placeholder="Search"
+        <div class="body-content">
+          <div class="blog-container">
+            <img
+              src="./images/body-content-1.png"
+              alt="blog-img"
             />
-            <button class="pink-search-btn">
-              <span class="material-icons md-light"> search </span>
-            </button>
           </div>
-          <div class="categories-container">
-            <h3 class="categories-text">Categories</h3>
-            <ul class="categories-list">
-              <li class="categories-list-item">
-                <a href=""> Photography </a>
-                <span class="categories-list-item-count">195</span>
-              </li>
-              <li class="categories-list-item">
-                <a href=""> Illustration </a>
-                <span class="categories-list-item-count">15</span>
-              </li>
-              <li class="categories-list-item">
-                <a href=""> Graphic Design </a>
-                <span class="categories-list-item-count">36</span>
-              </li>
-              <li class="categories-list-item">
-                <a href=""> Web Design </a>
-                <span class="categories-list-item-count">220</span>
-              </li>
-              <li class="categories-list-item">
-                <a href=""> Videography </a>
-                <span class="categories-list-item-count">17</span>
-              </li>
-            </ul>
-          </div>
-          <div class="subscribe-container">
-            <h3 class="subscribe-text">Subscribe</h3>
-            <div class="subscribe-form">
-              <span>Name</span>
+        </div>
+        <div class="body-right-full">
+          <div class="body-side-panel">
+            <div class="input-search-1-container">
               <input
                 type="text"
-                placeholder="Igor Ten"
+                name="search"
+                id="search"
+                class="input-search-1"
+                placeholder="Search"
               />
-              <span>Email</span>
-              <input
-                type="email"
-                placeholder="email@adress.com"
-              />
-              <button class="subscribe-btn">SUBSCRIBE</button>
+              <button class="pink-search-btn">
+                <span class="material-icons md-light"> search </span>
+              </button>
             </div>
-            <div class="form-seperator">
-              <div class="or-bar"></div>
-              <span>or</span>
-              <div class="or-bar"></div>
+            <div class="categories-container">
+              <h3 class="categories-text">Categories</h3>
+              <ul class="categories-list">
+                <li class="categories-list-item">
+                  <a href="">
+                    <span> Photography </span>
+                    <span class="categories-list-item-count">195</span>
+                  </a>
+                </li>
+                <li class="categories-list-item">
+                  <a href="">
+                    <span> Illustration </span>
+                    <span class="categories-list-item-count">15</span>
+                  </a>
+                </li>
+                <li class="categories-list-item">
+                  <a href="">
+                    <span> Graphic Design </span>
+                    <span class="categories-list-item-count">36</span>
+                  </a>
+                </li>
+                <li class="categories-list-item">
+                  <a href="">
+                    <span> Web Design </span>
+                    <span class="categories-list-item-count">220</span>
+                  </a>
+                </li>
+                <li class="categories-list-item">
+                  <a href="">
+                    <span> Videography </span>
+                    <span class="categories-list-item-count">17</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe-container">
+              <h3 class="subscribe-text">Subscribe</h3>
+              <form class="subscribe-form">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Igor Ten"
+                />
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="email@adress.com"
+                />
+                <button class="subscribe-btn">SUBSCRIBE</button>
+              </form>
+              <div class="form-seperator">
+                <div class="or-bar"></div>
+                <span>or</span>
+                <div class="or-bar"></div>
+              </div>
+              <div class="subscribe-socials just-flex">
+                <a class="social-round-bg fb-bg"
+                  ><i class="fa fa-brands fa-facebook"></i
+                ></a>
+                <a class="social-round-bg twitter-bg"
+                  ><i class="fa fa-brands fa-twitter"></i
+                ></a>
+                <a class="social-round-bg vk-bg"
+                  ><i class="fa fa-brands fa-vk"></i
+                ></a>
+                <a class="social-round-bg pinterest-bg"
+                  ><i class="fa fa-brands fa-pinterest-p"></i
+                ></a>
+                <a class="social-round-bg tumblr-bg">
+                  <i class="fa fa-brands fa-tumblr"></i>
+                </a>
+                <a class="social-round-bg dribble-bg"
+                  ><i class="fa fa-brands fa-dribbble"></i
+                ></a>
+              </div>
+            </div>
+            <div class="tab-post-container">
+              <h3 class="tab-post-text">Tab Post Widget</h3>
+              <div class="tab-post-switch">
+                <span class="tab-post-switch-active">Recent Post</span>
+                <span>Popular Post</span>
+              </div>
+              <div class="posts">
+                <div class="post">
+                  <div class="post-img-container">
+                    <img
+                      src="./images/post1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date-comments">
+                      <span>April 28, 2016</span>
+                      <div class="post-comments">
+                        <span
+                          class="material-icons post-comment-icon"
+                        >
+                          question_answer
+                        </span>
+                        <span class="post-comment-count">17</span>
+                      </div>
+                    </div>
+                    <span class="post-title">Duis commodo elit sed nisi molestie</span>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="post-img-container">
+                    <img
+                      src="./images/post2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date-comments">
+                      <span>April 28, 2016</span>
+                      <div class="post-comments">
+                        <span
+                          class="material-icons post-comment-icon"
+                        >
+                          question_answer
+                        </span>
+                        <span class="post-comment-count">17</span>
+                      </div>
+                    </div>
+                    <span class="post-title">Duis commodo elit sed nisi molestie</span>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="post-img-container">
+                    <img
+                      src="./images/post3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date-comments">
+                      <span>April 28, 2016</span>
+                      <div class="post-comments">
+                        <span
+                          class="material-icons post-comment-icon"
+                        >
+                          question_answer
+                        </span>
+                        <span class="post-comment-count">17</span>
+                      </div>
+                    </div>
+                    <span class="post-title">Duis commodo elit sed nisi molestie</span>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="post-img-container">
+                    <img
+                      src="./images/post4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date-comments">
+                      <span>April 28, 2016</span>
+                      <div class="post-comments">
+                        <span
+                          class="material-icons post-comment-icon"
+                        >
+                          question_answer
+                        </span>
+                        <span class="post-comment-count">17</span>
+                      </div>
+                    </div>
+                    <span class="post-title">Duis commodo elit sed nisi molestie</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <h3 class="tags-text">Tags</h3>
+              <ul class="tags-lists">
+                <li>
+                  <a href="#">Phototgraphy</a>
+                </li>
+                <li>
+                  <a href="#">Webdesign</a>
+                </li>
+                <li>
+                  <a href="#">Youtube</a>
+                </li>
+                <li>
+                  <a href="#">Envato</a>
+                </li>
+                <li>
+                  <a href="#">Art</a>
+                </li>
+                <li>
+                  <a href="#">Themefotest</a>
+                </li>
+                <li>
+                  <a href="#">Illustration</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
