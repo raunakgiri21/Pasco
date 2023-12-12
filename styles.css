@@ -628,7 +628,7 @@ BODY
   border-radius: 5px;
   background-color: #fff;
   border-radius: 4px;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   width: 260px;
 }
 .vertical-blog-video-container {
@@ -663,6 +663,14 @@ BODY
   margin-top: 11px;
   margin-bottom: 25px;
 }
+.vertical-blog-container .small-blog-about {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  width: 230px;
+  height: 84px;
+  overflow: hidden;
+}
 .vertical-blog-container .small-blog-author {
   padding-left: 20px;
   padding-right: 10px;
@@ -674,7 +682,51 @@ BODY
 .vertical-blog-container .more-vert-tag {
   margin-top: 24px;
 }
-
+.bottom-containers {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-containers .vertical-blog-container {
+  width: 400px;
+}
+.bottom-containers .vertical-blog-video-container {
+  height: 300px;
+}
+.bottom-containers .video-options-bottom {
+  margin-bottom: 6px;
+}
+.bottom-containers .video-feedbacks {
+  margin-right: 2px;
+}
+.bottom-containers .small-blog-theory {
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+.bottom-containers .small-blog-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.bottom-containers .small-blog-about {
+  font-size: 16px;
+  line-height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  width: 365px;
+  height: 110px;
+  overflow: hidden;
+}
+.bottom-containers .small-blog-author {
+  padding-left: 19px;
+  padding-bottom: 11px;
+}
+.bottom-containers .more-vert-tag {
+  margin-top: 4px;
+  margin-right: 1px;
+}
+/* .small-blog-title a:visited {
+  color: #303f9f;
+} */
 /* SIDE PANEL *****************/
 .body-right-full {
   background-color: #fff;
