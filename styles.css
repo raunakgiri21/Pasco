@@ -448,11 +448,11 @@ BODY
 .video-options-bottom a {
   color: #ffffff;
 }
-.video-options-bottom .count,
-.tag {
+.video-options-bottom .feed-count,
+.blog-tag {
   font-size: 12px;
 }
-.video-options-bottom .tag {
+.video-options-bottom .blog-tag {
   margin-top: 1px;
 }
 .play-circle-icon {
@@ -491,6 +491,8 @@ BODY
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 5px;
+}
+.main-blog-title a {
   letter-spacing: 1px;
   color: #212121;
 }
@@ -588,6 +590,8 @@ BODY
   font-size: 16px;
   margin-left: 19px;
   margin-bottom: 8px;
+}
+.small-blog-title a {
   letter-spacing: 0.5px;
   color: #212121;
 }
