@@ -727,6 +727,29 @@ BODY
 /* .small-blog-title a:visited {
   color: #303f9f;
 } */
+.view-more-container {
+  margin-top: 22px;
+  margin-bottom: 41px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 500;
+  gap: 11px;
+  color: #3f51b5;
+}
+.circle-arrow-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3f51b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 1px #e1e1e1;
+  border: none;
+}
 /* SIDE PANEL *****************/
 .body-right-full {
   background-color: #fff;
@@ -1043,7 +1066,48 @@ BODY
 FOOTER
 ====================================
 */
-
+/* Image Slides */
+.img-slides {
+  background-color: #eeeeee;
+  height: 240px;
+}
+/* Full width subscribe form */
+.full-width-form {
+  background-color: #212121;
+  background-image: url("./images/newsletter-bg.png");
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-content {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-content h4{
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 42px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+.form-content input{
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #737477;
+  width: 270px;
+  padding: 14px 0px;
+  padding-left: 20px;
+  border-radius: 25px;
+  color: #ffffff;
+  outline: none;
+}
+.form-content .blue-btn {
+  margin-bottom: 2px;
+  padding-top: 11px;
+  padding-left: 33px;
+}
 .footer {
   background-color: #303030;
   height: 80px;
