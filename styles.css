@@ -1112,9 +1112,8 @@ FOOTER
 .form-content input {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #737477;
-  width: 270px;
-  padding: 14px 0px;
-  padding-left: 20px;
+  width: calc(23% + 1px);
+  padding: 14px 20px;
   border-radius: 25px;
   color: #ffffff;
   outline: none;
@@ -1136,7 +1135,7 @@ FOOTER
   padding-top: 46px;
   padding-bottom: 72px;
   display: flex;
-  gap: 30px;
+  gap: 31px;
 }
 .footer-body-content h5 {
   color: #ffffff;
@@ -1145,6 +1144,9 @@ FOOTER
   font-weight: 700;
   margin-bottom: 25px;
 }
+.pages-widget-container {
+  width: calc(25% - 23px);
+}
 .pages-accordians {
   height: 375px;
 }
@@ -1152,7 +1154,7 @@ FOOTER
   margin-bottom: 5px;
 }
 .btn-accordian {
-  width: 270px;
+  width: 100%;
   background: transparent;
   border: 1px solid #757575;
   font-family: "Open Sans", sans-serif;
@@ -1175,7 +1177,6 @@ FOOTER
   opacity: 0.8;
 }
 .accordian-panels {
-  width: 270px;
   border: 1px solid #757575;
   border-top: none;
   border-bottom-left-radius: 4px;
@@ -1213,28 +1214,56 @@ FOOTER
   color: #ababab;
 }
 .twitter-widget-container {
-  width: 270px;
-  font-family: 'Open Sans', sans-serif;
+  width: calc(25% - 23px);
+}
+.twitter-widget-container h5 {
+  margin-bottom: 21px;
+}
+.tweet-containers {
+  margin-bottom: 15px;
+}
+.tweet-container {
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+.last-tweet-container {
+  border-bottom: none;
 }
 .tweet-highlight {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
 }
 .tweet-highlight .fa-twitter {
   color: #55acee;
   font-size: 24px;
+  margin-right: 15px;
+  margin-left: 8px;
+  margin-top: 1px;
 }
 .tweet-highlight span a{
+  font-size: 14px;
   color: #bdbdbd;
+  display: flex;
+  line-height: 21px;
 }
 .tweet-feedbacks {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-right: 3px;
+}
+.tweet-feedbacks .material-icons {
+  font-size: 16px;
+  margin-top: 1px;
 }
 .tweet-feedback-options {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   justify-content: space-between;
+  gap: 14px;
 }
 .tweet-feedbacks span{
   color: #909090;
@@ -1243,6 +1272,13 @@ FOOTER
   color: #909090;
   text-decoration: underline;
   
+}
+.social-container h5 {
+  margin-bottom: 15px;
+}
+.social-widget-icons .subscribe-socials {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 /*********************************** END FOOTER */
 .footer {
