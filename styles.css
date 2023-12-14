@@ -1281,17 +1281,62 @@ FOOTER
   margin-top: 0px;
   margin-left: 0px;
 }
+.flickr-widget-container {
+  margin-right: 29px;
+}
+.flickr-widget-container h5{
+  margin-bottom: 26px;
+}
 .square-img-container {
   display: flex;
   flex-direction: column;
   gap: 4px;
   margin-left: 1px;
-  margin-top: 1px;
 }
 .img-grid-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
+}
+.newsletter-widget-container {
+  width: calc(25% - 23px);
+}
+.newsletter-widget-container h5{
+  margin-bottom: 26px;
+}
+.newsletter-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2px;
+}
+.newsletter-form-container input,textarea {
+  background: transparent;
+  border: 1px solid #757575;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 13px 14px;
+  padding-bottom: 11px;
+}
+.newsletter-form-container #message {
+  height: 120px;
+}
+.newsletter-form-container button {
+  background-color: #303030;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 1px;
+  border-radius: 4px;
+  padding: 14px 0;
+  padding-bottom: 12px;
+  padding-left: 2px;
+  cursor: pointer;
 }
 /*********************************** END FOOTER */
 .footer {
