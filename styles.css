@@ -1135,7 +1135,6 @@ FOOTER
   padding-top: 46px;
   padding-bottom: 72px;
   display: flex;
-  gap: 31px;
 }
 .footer-body-content h5 {
   color: #ffffff;
@@ -1146,6 +1145,7 @@ FOOTER
 }
 .pages-widget-container {
   width: calc(25% - 23px);
+  margin-right: 31px;
 }
 .pages-accordians {
   height: 375px;
@@ -1215,6 +1215,7 @@ FOOTER
 }
 .twitter-widget-container {
   width: calc(25% - 23px);
+  margin-right: 29px;
 }
 .twitter-widget-container h5 {
   margin-bottom: 21px;
@@ -1279,6 +1280,18 @@ FOOTER
 .social-widget-icons .subscribe-socials {
   margin-top: 0px;
   margin-left: 0px;
+}
+.square-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.img-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
 }
 /*********************************** END FOOTER */
 .footer {
