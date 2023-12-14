@@ -1288,15 +1288,11 @@ FOOTER
   margin-bottom: 26px;
 }
 .square-img-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-left: 1px;
-}
-.img-grid-row {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 4px 8px;
+  margin-left: 1px;
 }
 .newsletter-widget-container {
   width: calc(25% - 23px);
