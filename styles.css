@@ -1366,6 +1366,7 @@ textarea {
   position: relative;
   display: flex;
   margin-bottom: 1px;
+  margin-left: 78px;
 }
 .input-search2 {
   background-color: transparent;
@@ -1386,10 +1387,12 @@ textarea {
   color: #7f7f7f;
   letter-spacing: 1px;
 }
-.language-bottom-icon {
-  margin-right: 0px;
+.bottom-language {
+  margin-right: 1px;
 }
-
+.bottom-language .header-text {
+  margin-left: 4px;
+}
 /* 
 ====================================
 ANIMATIONS
