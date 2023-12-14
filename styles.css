@@ -1241,10 +1241,10 @@ FOOTER
   margin-left: 8px;
   margin-top: 1px;
 }
-.tweet-highlight span a{
+.tweet-highlight h6 a{
   font-size: 14px;
+  font-weight: 500;
   color: #bdbdbd;
-  display: flex;
   line-height: 21px;
 }
 .tweet-feedbacks {
