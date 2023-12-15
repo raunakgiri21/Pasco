@@ -1074,7 +1074,7 @@ FOOTER
   overflow: hidden;
 }
 .img-slides {
-  width: 100%;
+  width: max-content;
   display: flex;
   animation: 10s slide infinite linear;
 }
@@ -1406,6 +1406,6 @@ ANIMATIONS
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
