@@ -106,6 +106,9 @@
       <div class="home-container">
         <!-- Main Navbar -->
         <div class="nav-menu">
+          <div class="nav-toggle-btn">
+            <span class="material-icons md-light nav-toggle-icon"> menu </span>
+          </div>
           <div class="logo-container">
             <a
               href="#"
@@ -113,7 +116,7 @@
               >PASCO</a
             >
           </div>
-          <ul class="navs">
+          <ul class="navs navs-display-none">
             <li class="nav-container active-nav">
               <a
                 href="#"
@@ -306,6 +309,22 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="sort-blog-accordian">
+        <div class="sort-blog-main-accordian">
+          <span class="sort-blog-current">Sort Blog</span>
+          <div class="sort-blog-icon-pair">
+            <span class="material-icons"> arrow_drop_up </span>
+            <span class="material-icons"> arrow_drop_down </span>
+          </div>
+        </div>
+        <div class="sort-blog-accordian-options">
+          <div class="sort-blog-option"><span>All</span></div>
+          <div class="sort-blog-option"><span>Photography</span></div>
+          <div class="sort-blog-option"><span>Lifestyle</span></div>
+          <div class="sort-blog-option"><span>Trip</span></div>
+          <div class="sort-blog-option"><span>Inspiration</span></div>
+        </div>
       </div>
     </div>
     <!-- BODY -->
@@ -1544,7 +1563,10 @@
         </div>
         <div class="newsletter-widget-container">
           <h5>News Letter</h5>
-          <form class="newsletter-form-container" id="newsletter-form">
+          <form
+            class="newsletter-form-container"
+            id="newsletter-form"
+          >
             <input
               type="text"
               name="name"
@@ -1564,7 +1586,12 @@
               id="message"
               placeholder="Message"
             ></textarea>
-            <button class="newsletter-subscribe-btn" form="newsletter-form">Subscribe</button>
+            <button
+              class="newsletter-subscribe-btn"
+              form="newsletter-form"
+            >
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
