@@ -21,7 +21,7 @@ Fonts
 body {
   font-family: "Montserrat";
   background-color: #f5f5f5;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body::-webkit-scrollbar {
   display: none;
@@ -527,7 +527,7 @@ SORT BLOG
 .sort-blog-accordian {
   display: none;
   height: 80%;
-  width: 80%;
+  width: 90%;
 }
 .sort-blog-accordian-options {
   display: none;
@@ -569,7 +569,7 @@ SORT BLOG
   height: calc((80 / 100) * 61px);
   display: flex;
   align-items: center;
-  width: 80vw;
+  width: 90vw;
   border-top: 1px solid #e0e0e0;
   padding-left: 16px;
   cursor: pointer;
@@ -986,11 +986,6 @@ BODY
   border-radius: 5px;
   height: inherit;
 }
-@media screen and (max-width: 768px) {
-  .body-right-full {
-    display: none;
-  }
-}
 .body-side-panel {
   padding-left: 38px;
   width: 310px;
@@ -1295,6 +1290,26 @@ BODY
 .tags-lists li:hover {
   background-color: #dadada;
 }
+@media screen and (max-width: 1170px) {
+  .body-right-full {
+    display: none;
+  }
+  .body-main {
+    width: 100vw;
+  }
+  .body-container {
+    width: 100%;
+  }
+  .body-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-blog-container {
+    width: 90vw;
+  }
+}
 /* 
 ====================================
 FOOTER
@@ -1310,7 +1325,7 @@ FOOTER
 .img-slides {
   width: max-content;
   display: flex;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 .img-slides:hover {
   animation-play-state: paused;
